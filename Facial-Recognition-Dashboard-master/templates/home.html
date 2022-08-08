@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="col-xs-12 col-sm-6 col-md-6 clearmargin clearpadding col-sm-push-6"><img class="main-image" src="/static/assets/img/frame5.jpg"></div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6" style="padding: 100px;">
+    <h1 class="text-center">Facial Recognition</h1>
+    <hr>
+    <p>We have prepared a model that can recognize some specific people.</p>
+    <!--<p>This is my full stack weekend project. It performs Facial Recognition using Keras Implementation of <a href="https://github.com/rcmalli/keras-vggface">VGG Face by RCMalli</a>. The source code for this website can be found <a href="https://github.com/animikhaich/Facial-Recognition-Dashboard">HERE</a><br></p>
+    <p>Please follow the following instructions as we proceed forward:<br></p>
+    <ol class="text-light">
+        <li>Upload pictures of the people whose faces you would like to recognize in the future</li>
+        <li>Faces will be detected and you will be prompted to enter the names of each detected face. You can skip a face if you don't want it to be identified.</li>
+        <li>Upload the query images (different form the first ones) where the same labeled group of faces are present.</li>
+    </ol> -->
+    <form style="text-align: center;vertical-align: middle;" method="POST" action="">
+        <input type="submit" value="Let's Begin!" name="next_button" class="btn btn-danger" style="border:none;width:180px;height:70px;margin-left:14px;background-color:#3abaa1;color:rgb(0, 0, 0);margin-top:12px; text-align:center;">
+    </form>
+    <!--<form style="text-align: center;vertical-align: middle;" action="">
+        <input type="submit" value="Let's Begin!" class="btn btn-danger" style="border:none;width:180px;height:70px;margin-left:14px;background-color:#3abaa1;color:rgb(0, 0, 0);margin-top:12px; text-align:center;">
+    </form>-->
+</div>
+{% endblock content %}

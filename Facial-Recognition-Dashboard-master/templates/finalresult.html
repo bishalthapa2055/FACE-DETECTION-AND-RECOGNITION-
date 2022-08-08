@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <p>Result:</p>
+    <div>
+        <img src="" id="myimg" alt="">
+    </div>
+    <!-- <div>
+   <a href="{{ image_path }}" target="_blank">
+        <img src={{ image_path }} alt="{{ image_path }}" style="width: 500px; height: 500px;">
+    </a>
+    <p class="links"><a href="{{ url_for('upload_faces') }} " style="padding:5px; background: whitesmoke; color: tomato; text-decoration: none;">Recognize next person</a>
+
+    </div>-->
+    <!--<img src={{url_for('static', filename="test.jpg")}} style="height:200px; width:300px;" alt="#">-->
+    <h3 style="color: white;">{{ user_name }}</h3>
+    <h3 style="color: white;">Please go back to recognize next person</h3>
+
+{% endblock content %}

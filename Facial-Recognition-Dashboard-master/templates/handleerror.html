@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div>
+    <h2 style="color: white;">Something goes wrong.</h2><br>
+    <h2 style="color: white;">Either you select Non Image  or selected image is of low resolution.</h2><br>
+    <h2 style="color: white;">Go back and test for another Image.</h2><br>
+
+
+    <p class="links"><a href="{{ url_for('upload_faces') }} " style="padding:5px; background: #3abaa1; color: black; text-decoration: none;">Recognize next person</a>
+<br>
+
+</div>
+{% endblock content %}
